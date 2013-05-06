@@ -1,0 +1,2 @@
+woocommerce-new-product-badge
+=============================
