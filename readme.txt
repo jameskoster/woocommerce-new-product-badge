@@ -13,7 +13,7 @@ Displays a 'new' badge on WooCommerce products published in the last x days.
 
 A very simple plugin that displays a 'new' badge on products that were published in the last x days. X is defined on the catalog tab of the WooCommerce settings screen.
 
-Please feel free to contribute on <a href="https://github.com/jameskoster/woocommerce-new-badge">github</a>.
+Please feel free to contribute on <a href="https://github.com/jameskoster/woocommerce-new-product-badge">github</a>.
 
 == Installation ==
 
