@@ -33,8 +33,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		class WC_nb {
 
 			public function __construct() {
-				add_action( 'wp_enqueue_scripts', array( &$this, 'setup_styles' ) );														// Enqueue the styles
-				add_action( 'woocommerce_before_shop_loop_item_title', array( &$this, 'woocommerce_show_product_loop_new_badge' ), 30 ); 	// The new badge function
+				add_action( 'wp_enqueue_scripts', array( $this, 'setup_styles' ) );														// Enqueue the styles
+				add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'woocommerce_show_product_loop_new_badge' ), 30 ); 	// The new badge function
 
 				// Init settings
 				$this->settings = array(
@@ -58,8 +58,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
 
 				// Admin
-				add_action( 'woocommerce_settings_image_options_after', array( &$this, 'admin_settings' ), 20);
-				add_action( 'woocommerce_update_options_catalog', array( &$this, 'save_admin_settings' ) );
+				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20);
+				add_action( 'woocommerce_update_options_catalog', array( $this, 'save_admin_settings' ) );
 			}
 
 
