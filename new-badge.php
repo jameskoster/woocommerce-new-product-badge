@@ -45,7 +45,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					),
 					array(
 						'name' 		=> __( 'Product Newness', 'woocommerce-new-badge' ),
-						'desc' 		=> __( 'Display the "New" flash for how many days?', 'woocommerce-new-badge' ),
+						'desc' 		=> __( "Display the 'New' flash for how many days?", 'woocommerce-new-badge' ),
 						'id' 		=> 'wc_nb_newness',
 						'type' 		=> 'number',
 					),
