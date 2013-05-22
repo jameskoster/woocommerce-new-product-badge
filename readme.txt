@@ -1,9 +1,9 @@
 === WooCommerce New Product Badge ===
-Contributors: jameskoster
+Contributors: jameskoster, CoenJacobs
 Tags: woocommerce, ecommerce, new, new product
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +26,7 @@ Please feel free to contribute on <a href="https://github.com/jameskoster/woocom
 
 = I want to style the badge myself, how do I remove the default styles =
 
-There are only a couple of styles applied to the badge. Although not best practise it's probably safe to just overwrite these with your own css. However, if you want to do it properly, add the following code to the functions.php file in your theme / child theme to dequeue the css:
+There are only a couple of styles applied to the badge. Although not best practise it's probably safe to just overwrite these with your own css. However, if you want to do it properly you can either dequeue the css:
 
 `
 add_action( 'wp_enqueue_scripts', 'remove_new_badge_styles', 30 );
@@ -35,11 +35,22 @@ function remove_new_badge_styles() {
 }
 `
 
+Or use the filter:
+
+`add_filter( 'woocommerce_new_badge_enqueue_styles', false );`
+
+
 == Screenshots ==
 
 1. The new badge.
 
 == Changelog ==
+
+= 0.2 =
+* Introduced filter to disable style
+* Minor translation fix and added Dutch translation
+* Added en_GB
+* Stripped object pass by reference
 
 = 0.1 =
 Initial release.

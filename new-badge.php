@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce New Product Badge
 Plugin URI: http://jameskoster.co.uk/tag/new-badge/
-Version: 0.1
+Version: 0.2
 Description: Displays a 'new' badge on WooCommerce products published in the last x days.
 Author: jameskoster
 Tested up to: 3.6
