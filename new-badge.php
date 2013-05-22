@@ -81,7 +81,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
 			// Setup styles
 			function setup_styles() {
-				wp_enqueue_style( 'nb-styles', plugins_url( '/assets/css/style.css', __FILE__ ) );
+				if ( apply_filters( 'woocommerce_new_badge_enqueue_styles', true ) ) {
+					wp_enqueue_style( 'nb-styles', plugins_url( '/assets/css/style.css', __FILE__ ) );
+				}
 			}
 
 
