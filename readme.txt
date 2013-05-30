@@ -37,7 +37,12 @@ function remove_new_badge_styles() {
 
 Or use the filter:
 
-`add_filter( 'woocommerce_new_badge_enqueue_styles', false );`
+`
+add_filter( 'woocommerce_new_badge_enqueue_styles', 'remove_new_badge_styles' );
+function remove_new_badge_styles() {
+	return false;
+}
+`
 
 
 == Screenshots ==
@@ -46,10 +51,10 @@ Or use the filter:
 
 == Changelog ==
 
-= 0.2 =
+= 0.2 - 23/05/2013 =
 * Introduced filter to disable style
 * Minor translation fix and added Dutch translation
-* Added en_GB
+* Added en_GB .po/.mo
 * Stripped object pass by reference
 
 = 0.1 =
