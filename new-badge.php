@@ -2,10 +2,10 @@
 /*
 Plugin Name: WooCommerce New Product Badge
 Plugin URI: http://jameskoster.co.uk/tag/new-badge/
-Version: 0.2.1
+Version: 0.3.0
 Description: Displays a 'new' badge on WooCommerce products published in the last x days.
 Author: jameskoster
-Tested up to: 3.6
+Tested up to: 3.8.1
 Author URI: http://jameskoster.co.uk
 Text Domain: woocommerce-new-badge
 Domain Path: /languages/
@@ -61,8 +61,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
 
 				// Admin
-				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20);
+				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20 );
 				add_action( 'woocommerce_update_options_catalog', array( $this, 'save_admin_settings' ) );
+				add_action( 'woocommerce_update_options_products', array( $this, 'save_admin_settings' ) );
 			}
 
 
