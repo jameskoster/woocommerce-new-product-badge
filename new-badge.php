@@ -20,15 +20,6 @@ Domain Path: /languages/
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
 	/**
-	 * Localisation (with WPML support)
-	 **/
-	add_action( 'init', 'plugin_init' );
-	function plugin_init() {
-		load_plugin_textdomain( 'woocommerce-new-badge', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-	}
-
-
-	/**
 	 * New Badge class
 	 **/
 	if ( ! class_exists( 'WC_nb' ) ) {
@@ -36,6 +27,15 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		class WC_nb {
 
 			public function __construct() {
+				add_action( 'init', array($this, 'init') );
+			}
+			
+			function init() {
+				/**
+				 * Localisation (with WPML support)
+				 **/
+				load_plugin_textdomain( 'woocommerce-new-badge', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+
 				add_action( 'wp_enqueue_scripts', array( $this, 'setup_styles' ) );														// Enqueue the styles
 				add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'woocommerce_show_product_loop_new_badge' ), 30 ); 	// The new badge function
 
