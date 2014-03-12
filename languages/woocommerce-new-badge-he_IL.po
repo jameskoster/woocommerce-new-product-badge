@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce New Product Badge v0.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-03-11 21:47+0200\n"
+"Last-Translator: Roi Dayan <roi.dayan@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: he_IL\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ woocommerce-new-badge
+#. translators: plugin header field 'Name'
+#: new-badge.php:0
+msgid "WooCommerce New Product Badge"
+msgstr "WooCommerce New Product Badge"
+
+# @ woocommerce-new-badge
+#. translators: plugin header field 'PluginURI'
+#: new-badge.php:0
+msgid "http://jameskoster.co.uk/tag/new-badge/"
+msgstr "http://jameskoster.co.uk/tag/new-badge/"
+
+# @ woocommerce-new-badge
+#. translators: plugin header field 'Description'
+#: new-badge.php:0
+msgid ""
+"Displays a 'new' badge on WooCommerce products published in the last x days."
+msgstr "הצג תגית 'חדש' על מוצרים שפורסמו ב-x ימים האחרונים."
+
+# @ woocommerce-new-badge
+#. translators: plugin header field 'Author'
+#: new-badge.php:0
+msgid "jameskoster"
+msgstr "jameskoster"
+
+# @ woocommerce-new-badge
+#. translators: plugin header field 'AuthorURI'
+#: new-badge.php:0
+msgid "http://jameskoster.co.uk"
+msgstr "http://jameskoster.co.uk"
+
+# @ woocommerce-new-badge
+#: new-badge.php:45
+msgid "New Badge"
+msgstr "תגית חדש"
+
+# @ woocommerce-new-badge
+#: new-badge.php:50
+msgid "Product Newness"
+msgstr "מוצר חדש"
+
+# @ woocommerce-new-badge
+#: new-badge.php:51
+msgid "Display the 'New' flash for how many days?"
+msgstr "לכמה ימים להציג את התגית 'חדש'?"
+
+# @ woocommerce-new-badge
+#: new-badge.php:105
+msgid "New"
+msgstr "חדש"
+
+# @ woocommerce-new-badge
+#. translators: plugin header field 'Version'
+#: new-badge.php:0
+msgid "0.3.0"
+msgstr "0.3.0"
