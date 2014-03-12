@@ -3,7 +3,7 @@ Contributors: jameskoster, CoenJacobs
 Tags: woocommerce, ecommerce, new, new product
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 0.3.0
+Stable tag: 0.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ function remove_new_badge_styles() {
 1. The new badge.
 
 == Changelog ==
+
+= 0.3.1 - 12/03/2014 =
+* Added Hebrew translation. (Props roidayan).
 
 = 0.3.0 - 04/02/2013 =
 * Added localization compatibility with WPML
